@@ -3,20 +3,34 @@ git status: để xem trạng thái các file trên thư mục mình đang làm 
 git add:
 git commit:
 
-git log:
+git log: biết được lịch sử commit
 git show: 
 git diff: 
 
 working directory:
 staging area:
-git repository:
+git repository: 
 
 git checkout -- <file>: thay đổi một số file khi chưa lên staging area
 git reset: thay đổi trạng thái của file
 
 brach: tạo nhánh mới trên git
 
-git checkout -b <branch> (branching):
-git checkout (branch):
-git merge: ghép cái nhánh mới hoặc 2 nhánh bất kì nào đấy
+git checkout -b <branch> (branching): lập một nhánh mới và sang nhánh đấy làm việc
+git checkout (branch): chuyển sang nhánh khác và làm việc trên nhánh đấy
+git merge: kéo những thay đổi ở branch vào một cái branch nào đấy A <---- B
+    + git checkout A
+    + git merge B
 git branch: để xem mình đang có những nhánh nào
+git branch -D <branch>: xóa một cái branch nào đấy
+
+Tạo nhánh mới khi làm một project nào đấy, một trang web có nhiều trang thì tạo các nhánh khác để làm việc và hoàn thiện cuối cùng thì đưa hết về nhánh master là bản hoàn chỉnh đầy đủ nhất
+
+
+git reset --soft <to_commit>: quay lại commit mình chỉ định
+git reset --mixed <to_commit>:
+git reset --hard <to_commit>:
+
+git revert <commit>: quay lại trạng thái lúc chưa có cái dòng đấy 
+.gitignore: file này sẽ nằm trong project của bạn, để bỏ qua một số file bạn không muốn commit và không muốn hiện thị ra khi gõ git status
+(nên dùng ignore nếu chưa commit bao giờ)
