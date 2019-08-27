@@ -1,0 +1,15 @@
+git init: để khởi tạo Git trong một repository (repo), nếu không có câu lệnh này thì sẽ không thực hiện được các câu lệnh khác
+git status:
+git add:
+git commit:
+
+git log:
+git show: 
+git diff: 
+
+working directory:
+staging area:
+git repository:
+
+git checkout: 
+git reset:
