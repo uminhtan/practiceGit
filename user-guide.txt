@@ -1,5 +1,5 @@
 git init: để khởi tạo Git trong một repository (repo), nếu không có câu lệnh này thì sẽ không thực hiện được các câu lệnh khác
-git status:
+git status: để xem trạng thái các file trên thư mục mình đang làm việc
 git add:
 git commit:
 
@@ -11,5 +11,12 @@ working directory:
 staging area:
 git repository:
 
-git checkout: 
-git reset:
+git checkout -- <file>: thay đổi một số file khi chưa lên staging area
+git reset: thay đổi trạng thái của file
+
+brach: tạo nhánh mới trên git
+
+git checkout -b <branch> (branching):
+git checkout (branch):
+git merge: ghép cái nhánh mới hoặc 2 nhánh bất kì nào đấy
+git branch: để xem mình đang có những nhánh nào
